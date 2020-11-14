@@ -1,0 +1,28 @@
+import {
+    Meta,
+    Story,
+    Canvas,
+    ArgsTable,
+    Title,
+    Description
+} from '@storybook/addon-docs/blocks';
+import Checkbox from './';
+
+<Meta title='Components/Checkbox' component={Checkbox} />
+
+<Title>Checkbox</Title>
+
+<Description of={Checkbox}>Custom Checkbox.</Description>
+
+<Canvas>
+    <Story
+        name='Checkbox'
+        parameters={{
+            jest: ['Checkbox']
+        }}
+    >
+        {(args) => <Checkbox {...args} />}
+    </Story>
+</Canvas>
+
+<ArgsTable story='Checkbox' />

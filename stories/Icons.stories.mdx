@@ -1,0 +1,39 @@
+import { Meta, IconGallery } from '@storybook/addon-docs/blocks';
+import IconContainer from './assets/IconContainer';
+import CheckBoxIconUnchecked from '../src/icons/CheckBoxIconUnchecked';
+import CheckBoxIconChecked from '../src/icons/CheckBoxIconChecked';
+import CheckBoxIconIntermediate from '../src/icons/CheckBoxIconIntermediate';
+
+<Meta
+    title='Icons'
+    parameters={{
+        previewTabs: { 'storybook/docs/panel': { hidden: true } },
+        viewMode: 'story'
+    }}
+/>
+
+<style>{`
+  .mainheading {
+    color: #001A70;
+  }
+  .iconitem {
+      color: "#0011F2" !important
+  }
+`}</style>
+
+<h1 class='mainheading'>Icons</h1>
+
+<IconGallery>
+    <IconContainer
+        icon={<CheckBoxIconUnchecked />}
+        name={'CheckBoxIconUnchecked'}
+    />
+    <IconContainer
+        icon={<CheckBoxIconChecked />}
+        name={'CheckBoxIconUnchecked'}
+    />
+    <IconContainer
+        icon={<CheckBoxIconIntermediate />}
+        name={'CheckBoxIconUnchecked'}
+    />
+</IconGallery>

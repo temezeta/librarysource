@@ -1,0 +1,9 @@
+{
+    "transform": {
+        "^.+\\.[tj]sx?$": "babel-jest",
+        "^.+\\.mdx?$": "@storybook/addon-docs/jest-transform-mdx"
+    },
+    "moduleNameMapper": {
+        "\\.(css|less)$": "<rootDir>/mocks/styleMock.js"
+    }
+}

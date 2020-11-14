@@ -1,0 +1,31 @@
+{
+    "extends": [
+        "react-app",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:css-modules/recommended",
+        "plugin:jsx-a11y/recommended",
+        "plugin:markdown/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "css-modules",
+        "jsx-a11y",
+        "markdown",
+        "prettier"
+    ],
+    "rules": {
+        "@typescript-eslint/no-empty-interface": 0
+    }
+}

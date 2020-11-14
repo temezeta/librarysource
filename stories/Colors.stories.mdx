@@ -1,0 +1,29 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+
+<Meta
+    title='Colors'
+    parameters={{
+        previewTabs: { 'storybook/docs/panel': { hidden: true } },
+        viewMode: 'story'
+    }}
+/>
+
+<style>{`
+  .mainheading {
+    color: #001A70;
+  }
+`}</style>
+
+<h1 class='mainheading'>Colors</h1>
+
+<ColorPalette>
+    <ColorItem title='Main color' subtitle='Dark blue' colors={['#001A70']} />
+    <ColorItem
+        title='Accent color'
+        subtitle='Bright blue'
+        colors={['#0037C9']}
+    />
+    <ColorItem title='Wine' colors={['#C90062']} />
+    <ColorItem title='Light gray' colors={['#F2F2F2']} />
+    <ColorItem title='White' colors={['#FFFFFF']} />
+</ColorPalette>
